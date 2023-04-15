@@ -57,7 +57,9 @@ function calcularIdade(){
     let diaAtual = dataAtual.getDate();
 
 
-    if ((anoAtual - anoNascimento) >= 18){
+    if ((anoAtual - anoNascimento) < 18){
+        document.getElementById("resultadoIdade").innerHTML = `Parabens você é menor de idade`
+    } if ((anoAtual - anoNascimento) >= 18){
         if ((mesAtual - mesNascimento) <= 0){
             if ((diaAtual - diaNascimeto >= 0)){
                 document.getElementById("resultadoIdade").innerHTML = `Que pena você é maior de idade`
@@ -67,7 +69,7 @@ function calcularIdade(){
         } else {
             document.getElementById("resultadoIdade").innerHTML = `Parabens você é menor de idade`
         }
-    } if ((anoAtual - anoNascimento) <= 0){
+    } if ((anoAtual - anoNascimento) <= 0) {
         document.getElementById("resultadoIdade").innerHTML = `Data de nascimento invalida`
     }
 }
