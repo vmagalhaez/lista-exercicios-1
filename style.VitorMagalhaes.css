@@ -1,0 +1,87 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: rgb(109, 109, 212);
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.btn:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Exercicio 1 */
+.exercicio1{
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px auto;
+}
+
+/* Exercicio 2 */
+.exercicio2{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Exercicio 3 */
+.exercicio3{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+    width: 50%;
+}
+
+/* Exercicio 4 */
+.exercicio4{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.exercicio5{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.exercicio6{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.exercicio7{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.exercicio8{
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black; 
+    width: 50%;
+}

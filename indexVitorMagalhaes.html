@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios</title>
+    <link rel="stylesheet" href="./style.VitorMagalhaes.css">
+</head>
+<body>
+    <div class="conteudo">
+        <h1 class="titulo">Lista de Exercicios</h1>
+
+        <div class="exercicio1">
+            <h3>Exercicio 1</h3>
+            <p>Escreva uma função em JavaScript que mostre na tela a mensagem “Bom dia, Mundo!!!”.</p>
+            <button class="btn" onclick="olaMundo()">Calcular</button>
+            <h3 id="resultado"></h3>
+        </div>
+    
+    
+        <div class="exercicio2">
+            <h3>Exercicio 2</h3>
+            <p>Escreva uma função que retorne o cubo de um número fornecido pelo usuário</p>
+            <label>Digite um numero</label>
+            <input id="numero">
+            <button class="btn" onclick="cubo()">Clique aqui</button>
+            <h3 id="resultadoCubo"></h3>
+        </div>
+    
+        <div class="exercicio3">
+            <h3>Exercicio 3</h3>
+            <p>Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para Celsius (C).Dica: para converter uma temperatura em F para C, subtraia 32 da temperatura e multiplique o resultado por 0,5556 (ou 5/9).</p>
+            <label>Digite a temperatura em Fahrenheit</label>
+            <input id="temperatura">
+            <button class="btn" onclick="celsius()">Clique aqui</button>
+            <h3 id="resultadoCelsius"></h3>
+        </div>
+    
+        <div class="exercicio4">
+            <h3>Exercicio 4</h3>
+            <p>Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura fornecidos.</p>
+            <label>Digite a altura do triangulo</label>
+            <input type="text" id="altura">
+            <label>Digite a base do triangulo</label>
+            <input type="text" id="base">
+            <button class="btn" type="button" onclick="calcularTriangulo()">Calcular resultado</button>
+            <h3 id="resultadoTriangulo"></h3>
+        </div>
+    
+        <div class="exercicio5">
+            <h3>Exercicio 5</h3>
+            <p> Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido.</p>
+            <label>Digite o raio</label>
+            <input type="text" id="raio">
+            <button class="btn" onclick="calcularCirculo()">Calcular</button>
+            <h3 id="areaCirculo"></h3>
+            <h3 id="perimetroCirculo"></h3>
+        </div>
+    
+        <div class="exercicio6">
+            <h3>Exercicio 6</h3>
+            <p> Crie uma função que calcula 5% de desconto retornando o valor do desconto.</p>
+            <label>Didite o valor do produto</label>
+            <input type="text" id="valor">
+            <button class="btn" onclick="desconto()">Calcular</button>
+            <h3 id="resultadoDesconto"></h3>
+        </div>
+    
+        <div class="exercicio7">
+            <h3>Exercicio 7</h3>
+            <p>Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade ou menor.</p>
+            <label>Digite seu ano de nascimento</label>
+            <input type="date" id="anoNascimento">
+            <button class="btn" onclick="calcularIdade()">Calcular</button>
+            <h3 id="resultadoIdade"></h3>
+        </div>
+    
+        <div class="exercicio8">
+            <h3>Exercicio 8</h3>
+            <p>Um novo modelo de carro, super econômico foi lançado. Ele faz 20 km com 1 litro de combustível. Cada litro de combustível custa R$ 5,00.Faça um programa que pergunte ao usuário quanto de dinheiro ele tem e em seguida diga quantos litros de combustível ele pode comprar e quantos kilometros o carro consegue andar com este tanto de combustível.Seu script será usado no computador de bordo do carro.</p>
+            <div>
+                <label>Digite Quanto dinheiro você tem para abastecer?</label>
+                <input type="text" id="dinheiro">
+            </div>
+            <div>
+                <label>Qual o preço da gasolina</label>
+                <input type="text" id="precoGasolina">
+            </div>
+            <button class="btn" onclick="calcularGasolina()">Calcular</button>
+            <h3 id="resultadoGasolina"></h3>
+        </div>
+    </div>
+   
+
+
+    <script src="./scriptVitorMagalhaes.js"></script>
+</body>
+</html>
