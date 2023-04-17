@@ -6,7 +6,11 @@ function cubo(){
     let num = parseFloat(document.getElementById("numero").value);
     let resultado = (Math.pow(num, 3)).toFixed(1);
 
-    document.getElementById("resultadoCubo").innerHTML = `O resultado de ${num} ao cubo é = ${resultado}`
+    if (isNaN(resultado)){
+        document.getElementById("resultadoCubo").innerHTML = "Valor invalido"
+    } else {
+        document.getElementById("resultadoCubo").innerHTML = `O resultado de ${num} ao cubo é = ${resultado}`
+    }
 
 }
 
@@ -14,8 +18,14 @@ function celsius(){
     let far = parseFloat(document.getElementById("temperatura").value);
 
     let cel = ((far - 32) * 0.5556).toFixed(0);
+
+    if (isNaN(cel)){
+        document.getElementById("resultadoCelsius").innerHTML = "Valor invalido"
+    } else {
+        document.getElementById("resultadoCelsius").innerHTML = `A temperatura ${far}°F equivale a ${cel}°C `
+    }
     
-    document.getElementById("resultadoCelsius").innerHTML = `A temperatura ${far}°F equivale a ${cel}°C `
+
 }
 
 function calcularTriangulo(){
@@ -23,24 +33,40 @@ function calcularTriangulo(){
     let base = parseFloat(document.getElementById("base").value);
     let resultado = ((base * altura) / 2).toFixed(3);
 
-    document.getElementById("resultadoTriangulo").innerHTML = `A area do triangulo de base ${base} e altura ${altura} é = ${resultado}`
+    if (isNaN(resultado)){
+        document.getElementById("resultadoTriangulo").innerHTML = "Valor invalido"
+    } else {
+        document.getElementById("resultadoTriangulo").innerHTML = `A area do triangulo de base ${base} e altura ${altura} é = ${resultado}`
+    }
 }
+
+
 
 function calcularCirculo(){
     let raio = parseFloat(document.getElementById("raio").value);
     let area = (Math.PI * Math.pow(raio, 2)).toFixed(2);
     let perimetro = ((2 * Math.PI) * raio).toFixed(2);
 
-    document.getElementById("areaCirculo").innerHTML = `Area =  ${area}`;
-    document.getElementById("perimetroCirculo").innerHTML = `Perimetro = ${perimetro}`
+    if (isNaN(area) && isNaN(perimetro)){
+        document.getElementById("areaCirculo").innerHTML = "Valor Invalido";
+    } else {
+        document.getElementById("areaCirculo").innerHTML = `Area =  ${area}`;
+        document.getElementById("perimetroCirculo").innerHTML = `Perimetro = ${perimetro}`;
+    }
 }
+
+
 
 function desconto(){
     let valor = parseFloat(document.getElementById("valor").value);
     let desconto = (valor * 0.05).toFixed(2);
     let resultado = (valor - desconto).toFixed(2);
 
-    document.getElementById("resultadoDesconto").innerHTML = `O produto de R$${valor} terá desconto de R$${desconto} / Preço final de R$${resultado} `
+    if (isNaN(resultado)){
+        document.getElementById("resultadoDesconto").innerHTML = "Valor invalido";
+    } else {
+        document.getElementById("resultadoDesconto").innerHTML = `O produto de R$${valor} terá desconto de R$${desconto} / Preço final de R$${resultado} `
+    }
 }
 
 
@@ -81,5 +107,9 @@ function calcularGasolina(){
     let litros = (dinheiro / precoGasolina).toFixed(0);
     let km = (litros * 20).toFixed(0);
 
-    document.getElementById("resultadoGasolina").innerHTML = `Você poderá comprar ${litros} litros de gasolina e podera andar ${km} quilometros`;
+    if (isNaN(litros) && isNaN(km)){
+        document.getElementById("resultadoGasolina").innerHTML = "Valor invalido";
+    } else {
+        document.getElementById("resultadoGasolina").innerHTML = `Você poderá comprar ${litros} litros de gasolina e podera andar ${km} quilometros`;
+    }
 }
